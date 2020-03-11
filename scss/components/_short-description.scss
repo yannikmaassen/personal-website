@@ -1,0 +1,15 @@
+.short-description__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.short-description__heading {
+    margin-top: 40px;
+}
+
+.short-description__image {
+    justify-content: center;
+}
+
