@@ -1,3 +1,5 @@
+@import "header-colors";
+
 .header__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -16,5 +18,5 @@
 
 .header {
     margin: 20px;
-    background: salmon;
+    background: var(--header-background);
 }
