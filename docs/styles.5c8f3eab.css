@@ -1,73 +1,89 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background: #003791;
   height: 100vh;
-  color: white; }
+  color: white;
+}
 
 .grid {
-  display: grid; }
+  display: grid;
+}
 
 .mb-20 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .w-100 {
-  width: 100%; }
+  width: 100%;
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
 
 .header__grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-content: center;
-  justify-items: center; }
+  justify-items: center;
+}
 
 .header__header {
   height: 48px;
   justify-content: center;
   align-items: center;
   border-bottom-style: dotted;
-  border-bottom-color: black; }
+  border-bottom-color: black;
+}
 
 .header {
   margin: 20px;
-  background: salmon; }
+  background: salmon;
+}
 
 .short-description__grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  justify-items: center; }
+  justify-items: center;
+}
 
 .short-description__heading {
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .short-description__image {
-  justify-content: center; }
+  justify-content: center;
+}
 
 .contact__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center; }
+  justify-items: center;
+}
 
 .box .contact__box {
   border-style: solid;
   border-color: grey;
   height: 100px;
   width: 150px;
-  background-color: lightgrey; }
+  background-color: lightgrey;
+}
 
 .contact__heading {
-  text-align: center; }
+  text-align: center;
+}
 
 .skills__grid {
-  display: grid; }
+  display: grid;
+}
 
 .skills__heading1 {
-  text-align: center; }
-
+  text-align: center;
+}
 
 /*# sourceMappingURL=/styles.5c8f3eab.css.map */
