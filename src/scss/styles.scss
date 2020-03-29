@@ -1,15 +1,14 @@
-@import "variables";
-@import "base";
-@import "utils";
+@import 'variables';
+@import 'base';
+@import 'utils';
 
 //components:
 
-@import "enter";
-@import "components/header";
-@import "components/short-description";
-@import "components/contact";
-@import "components/skills";
-
+@import 'enter';
+@import 'components/header';
+@import 'components/short-description';
+@import 'components/contact';
+@import 'components/skills';
 
 // e.g.
 // @import "navigation";
