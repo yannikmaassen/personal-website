@@ -1,17 +1,17 @@
 .contact__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .box .contact__box {
-    border-style: solid;
-    border-color: grey;
-    height: 100px;
-    width: 150px;
-    background-color: lightgrey;
+  border-style: solid;
+  border-color: grey;
+  height: 100px;
+  width: 150px;
+  background-color: lightgrey;
 }
 
 .contact__heading {
-    text-align: center;
+  text-align: center;
 }
