@@ -13,7 +13,7 @@
     "eslint": "eslint src/js/**/*.js",
     "eslint:fix": "npm run eslint -- --fix",
     "fix": "npm run eslint:fix && npm run prettier && npm run stylelint:fix",
-    "lint": "npm run htmlhint && npm run stylelint",
+    "lint": "npm run eslint && npm run htmlhint && npm run stylelint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
