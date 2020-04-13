@@ -1,20 +1,6 @@
-.header__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-content: center;
-  justify-items: center;
-}
-
-.header__header {
-  height: 48px;
-  justify-content: center;
-  align-items: center;
-  border-bottom-style: dotted;
-  border-bottom-color: black;
-}
-
 .header {
-  margin: 20px;
-  background: salmon;
+  text-align: center;
+  background: #333;
+  width: 100vw;
+  margin-bottom: 24px;
 }

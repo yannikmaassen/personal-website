@@ -1,13 +1,10 @@
-@import 'variables';
 @import 'base';
-@import 'utils';
+@import 'enter';
 
 //components:
 
-@import 'enter';
 @import 'components/header';
-@import 'components/short-description';
-@import 'components/contact';
+@import 'components/intro';
 @import 'components/skills';
 
 // e.g.

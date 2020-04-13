@@ -1,65 +1,114 @@
-.enter {
+.index-html,
+.index-main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.enter__body {
-  margin: 0;
-  background-color: #191919;
-  min-height: 100vh;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: Helvetica, sans-serif;
+  background: #333;
+  font-size: 1.2em;
+  animation-duration: 1.5s;
+  animation-name: slidein;
 }
 
-.enter__heading {
-  color: white;
-}
-
-#enter__a {
-  text-decoration: none;
+.glow-on-hover {
+  width: 300px;
+  height: 100px;
+  border: none;
+  outline: none;
   color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin: 20px;
 }
 
-.rainbow-button {
-  width: calc(20vw + 6px);
-  height: calc(8vw + 6px);
-  background-image:
+.glow-on-hover::before {
+  content: '';
+  background:
     linear-gradient(
-      90deg,
-      #00c0ff 0%,
-      #ffcf00 49%,
-      #fc4f4f 80%,
-      #00c0ff 100%
+      45deg,
+      #ff00,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff00
     );
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 3vw;
-  font-weight: bold;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
-.rainbow-button::after {
-  content: attr(alt);
-  width: 20vw;
-  height: 8vw;
-  background-color: #191919;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.glow-on-hover:active {
+  color: #000;
 }
 
-.rainbow-button:hover {
-  animation: slidebg 2s linear infinite;
+.glow-on-hover:hover::before {
+  opacity: 1;
 }
 
-@keyframes slidebg {
+.glow-on-hover::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #9a68af;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active::after {
+  background: transparent;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    height: 300%;
+  }
+
   to {
-    background-position: 20vw;
+    margin-top: 0%;
+    height: 100%;
   }
 }
